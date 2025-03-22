@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    background: red;
+    color: white;
+    padding: 9px 23px;
+    font-size: 19px;
+    border: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.lang-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-containt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.header-containt h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 1000;
+    max-width: 650px;
+}
+
+.header-containt h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-sign {
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-sign input {
+    color: white;
+    background: transparent;
+    font-size: 19px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    padding: 15px 100px;
+}
+
+.email-sign button {
+    background: red;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.line {
+    height: 7px;
+    background-color: rgba(23, 23, 23, 0.9);
+}
+
+/*          Trading containt           */
+.Trading {
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 150px;
+    padding-bottom: 40px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 250px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapp {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+    padding-left: 0px;
+}
+
+.slider-wrapp img {
+    display: inline-flex;
+    margin: 10px;
+    width: 200px;
+    max-width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.slider-wrapp img:first-child {
+    margin-inline-start: 1px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 40px;
+    height: 125px;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#prev {
+    left: 190px;
+}
+
+#next {
+    right: 190px;
+}
+
+/*   containt box    */
+
+.features2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.out-Conatint {
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 150px;
+    padding-bottom: 40px;
+
+}
+
+.containt-boxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containt-box {
+    position: relative;
+    margin: 15px;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+}
+
+.containt-box h2 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.containt-text {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/*      questions       */
+
+.Questions {
+    width: 100%;
+
+}
+
+.Frequently {
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 150px;
+    padding-bottom: 40px;
+}
+
+.questions-containt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.questions-box {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 70px;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+
+.plus-icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    width: 50px;
+}
+
+.email-second_ {
+    width: 100%;
+}
+
+.Ready {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-sign {
+    display: flex;
+    justify-content: center;
+}
+
+/*              footer           */
+.footer {
+    /* color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.125rem; */
+    width: 100%;
+}
+
+.Footer-question {
+    margin-top: 30px;
+    /* font-size: 40px; */
+    margin-left: 150px;
+    padding-bottom: 40px;
+}
+
+.footer-containt {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    /* gap: 30px; */
+
+}
+
+.ancher {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a {
+    color: white;
+}
